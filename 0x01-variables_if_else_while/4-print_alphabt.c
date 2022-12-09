@@ -8,8 +8,8 @@ int main(void)
 {
 	char a;
 
-	for (i = 'a'; i <= 'z'; i++)
-		if (i == 'e' || i == 'q')
+	for (a = 'a'; a <= 'z'; a++)
+		if (a == 'e' || a == 'q')
 			continue;
 		putchar(a);
 	putchar('\n');
