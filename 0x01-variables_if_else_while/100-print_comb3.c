@@ -12,16 +12,16 @@ int main(void)
 	{
 		for (b = '0'; b <= '8'; b++)
 		{
-				if (a > b)
+			if (a > b)
+			{
+				putchar(a);
+				putchar(b);
+				if (a != '7' || a != '8')
 				{
-					putchar(a);
-					putchar(b);
-					if (a != '7' || a != '8')
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
+			}
 		}
 	}
 	putchar('\n');
