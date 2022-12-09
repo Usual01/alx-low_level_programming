@@ -1,8 +1,9 @@
 #include <stdio.h>
+
 /**
  * main - tired
  *
- * Return
+ * Return: 0
  */
 int main(void)
 {
