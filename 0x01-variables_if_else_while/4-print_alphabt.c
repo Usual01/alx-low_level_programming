@@ -1,17 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - prints the lower alphabet letters
- *
- * Return: Always 0 (Success)
+ *main - A short description
+ *Return: 0
  */
 int main(void)
 {
-	char i;
+	char a;
+	char b;
 
 	for (i = 'a'; i <= 'z'; i++)
+		if (i == 'e' || i == 'q')
+			continue;
 		putchar(i);
-
 	putchar('\n');
 	return (0);
 }
+
+
+
