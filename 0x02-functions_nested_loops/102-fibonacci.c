@@ -14,7 +14,7 @@ int main(void)
 
 	c = 2;
 
-	for (a = 0; a < 50 ; ++i)
+	for (a = 0; a < 50 ; ++a)
 	{
 		if (b != 20365011074)
 		{
