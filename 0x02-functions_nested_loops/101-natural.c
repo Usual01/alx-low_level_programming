@@ -10,22 +10,22 @@ int main(void)
 	unsigned long int sum3, sum5, sum;
 	int i;
 
-	sum3 = 0;
-	sum5 = 0;
-	sum = 0;
+	a = 0;
+	b = 0;
+	c = 0;
 
 	for (i = 0; i < 1024; ++i)
 	{
 		if ((i % 3) == 0)
 		{
-			sum3 = sum3 + i;
+			a += i;
 		}
 		else if ((i % 5) == 0)
 		{
-			sum5 = sum5 + i;
+			b += i;
 		}
 	}
-	sum = sum3 + sum5;
-	printf("%lu\n", sum);
+	c = a + b;
+	printf("%lu\n", c);
 	return (0);
 }
