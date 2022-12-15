@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_most_numbers
+ * print_most_numbers - betty
  * Return: whaet
  */
 
@@ -15,7 +15,6 @@ void print_most_numbers(void)
 		{
 			_putchar(a)
 		}
-		
 	}
-	_putchar('\n');:w
+	_putchar('\n');
 }
