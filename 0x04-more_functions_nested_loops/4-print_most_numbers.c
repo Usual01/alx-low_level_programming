@@ -11,7 +11,7 @@ void print_most_numbers(void)
 
 	for (a = '0'; a <= '9'; a++)
 	{
-		if (a != 4 || a != 2)
+		if (a != 4 && a != 2)
 		{
 			_putchar(a)
 		}
