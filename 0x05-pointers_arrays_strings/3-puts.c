@@ -2,7 +2,7 @@
 /**
  * _puts - printa a steing to stdoutt
  *
- * @str - variable
+ * @str: variable
  */
 
 void _puts(char *str)
