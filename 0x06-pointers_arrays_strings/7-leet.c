@@ -6,7 +6,7 @@
  * Return: ANSWER
  */
 
-leet(char *s)
+char  *leet(char *s)
 {
 	int c, d;
 	char a[] = "aeotlAEOTL";
