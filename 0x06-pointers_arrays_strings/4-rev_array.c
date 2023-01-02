@@ -6,7 +6,7 @@
  * @n:pointer
  */
 
-void reverse_array(int0 *a, int n)
+void reverse_array(int *a, int n)
 {
 	int b, c, d;
 
