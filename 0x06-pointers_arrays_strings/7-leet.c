@@ -2,7 +2,7 @@
 
 /**
  * leet - encodes to 1337
- * @s - variable
+ * @s: - variable
  * Return: ANSWER
  */
 
