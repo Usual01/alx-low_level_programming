@@ -1,4 +1,4 @@
-#include "main.hc"
+#include "main.h"
 
 /**
  * leet - encodes to 1337
