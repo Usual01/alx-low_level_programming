@@ -3,8 +3,9 @@
 /**
  * string_toupper - lowercase to uppercase
  * @s: variale
- * Return answer:
+ * Return: answer
  */
+
 char *string_toupper(char *s)
 {
 	int i;
