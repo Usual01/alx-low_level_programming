@@ -17,7 +17,10 @@ int main(int argc, char *argv[])
 	{
 		for (b = 0; argv[a][b] != '\0'; b++)
 		{
-			if (!isdigit(atoi(argv[a][b])))
+			if (isdigit(argv[a][b]))
+			{
+			}
+			else
 			{
 				printf("Error\n");
 				return (1);
@@ -26,5 +29,6 @@ int main(int argc, char *argv[])
 		sum += atoi(argv[a]);
 	}
 	printf("%d\n", sum)
+		
 	return (0);
 }
