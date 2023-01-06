@@ -11,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b, add = 0;
+	int a, b, sum = 0;
 
 	for (a = 1; a < argc; a++)
 	{
@@ -23,8 +23,8 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-	add += atoi(argv[a]);
+		sum += atoi(argv[a]);
 	}
-	printf("%d\n", add)
+	printf("%d\n", sum)
 	return (0);
 }
