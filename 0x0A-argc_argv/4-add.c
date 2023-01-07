@@ -7,7 +7,7 @@
  * main - adds positive numbers
  *@argc: argument count
  *@argv:argument vector
- * Return: 0
+ *Return: 0
  */
 int main(int argc, char *argv[])
 {
@@ -17,13 +17,13 @@ int main(int argc, char *argv[])
 	{
 		for (b = 0; argv[a][b]; b++)
 		{
-		if (argv[a][b] < '0' || argv[a][b] > '9')
-		{
-			printf("Error\n");
-			return (1);
+			if (argv[a][b] < '0' || argv[a][b] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		sum += atoi(argv[a]);
-		}
+		sum += atoi(argv[a])
 	}
 	printf("%d\n", sum);
 	return (0);
