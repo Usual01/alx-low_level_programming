@@ -10,11 +10,9 @@
 
 int main(int argc, char *argv[])
 {
-	int cents, ncoins;
+	int cents, ncoins = 0;
 
-	ncoins = 0;
-
-	if (argc != 2)
+	if (argc != 2 || arv == 1)
 	{
 		printf("Error\n");
 		return (1);
@@ -26,6 +24,7 @@ int main(int argc, char *argv[])
 		if ((cents - 25) >= 0)
 			cents -= 25;
 		if ((cents - 10) >= 0)
+			i
 			cents -= 10;
 		if ((cents - 5) >= 0)
 			cents -= 5;
