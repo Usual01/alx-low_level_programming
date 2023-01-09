@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -17,7 +19,7 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 	while (str[b])
-		b++;
+		c++;
 	a = malloc(sizeof(char) * (c + 1));
 
 	if (a == NULL)
