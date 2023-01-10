@@ -11,21 +11,20 @@
 char *_strdup(char *str)
 {
 	char *a;
-	unsigned int b, c = 0;
+	int b, c = 0;
 
 	if (str == NULL)
 		return (NULL);
-	for (b = 0; str[b] != '\0'; b++)
-		c++;
 
-	a = malloc(sizeof(char) * (b + 1));
+	c = strlen(str) + 1;
+	a = (char *)malloc(len * sizeof(char));
 
 	if (a == NULL)
-		return (NULl);
+		return (NULL);
 
-	for (b = 0; str[b]; c++)
-		a[c] = str[c];
+	for (b = 0; b <= c; b++)
+		*(a + b) = *(str + b);
 
-	a[c] = '\0';
+
 	return (a);
 }
