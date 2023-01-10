@@ -11,20 +11,26 @@
 char *_strdup(char *str)
 {
 	char *a;
-	int b, c = 0;
+	int b, c;
 
-	if (str == NULL)
-		return (NULL);
+	b = 0;
+	c = 0;
 
-	c = strlen(str) + 1;
-	a = (char *)malloc(len * sizeof(char));
+	while (str[b] != '\0'
+	{
+		c++;
+		b++;
+	}
 
 	if (a == NULL)
 		return (NULL);
 
-	for (b = 0; b <= c; b++)
-		*(a + b) = *(str + b);
 
+	while (str[b] != '\0'
+	{
+		a[b] = str[b];
+		b++
+	}
 
 	return (a);
 }
