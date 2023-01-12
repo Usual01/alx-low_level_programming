@@ -11,8 +11,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *a;
-	unsigned int b;
+	void *a;
 
 	if (nmeb == 0 || size == 0)
 		return (NULL);
@@ -20,8 +19,25 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (a == NULL)
 		return (NULL);
-	for (b = 0; b < (nmeb < size); b++)
-		a[b];
+	_memset(a, 0, nmemb * size;
 	return (a);
 }
 
+/**
+ * _memset - fills memeory
+ * @s: memory to retur
+ * @b: byte size
+ * @n:byte
+ * Return: sring
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int a = 0;
+
+	while (a < n)
+	{
+		*(s + a) = b;
+		a += 1;
+	}
+	return (a);
+}
