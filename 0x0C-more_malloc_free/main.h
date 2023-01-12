@@ -1,5 +1,5 @@
-#include <stdlib.h>
-#include <stdio.h>
+#ifndef
+#define
 
 
 void *malloc_checked(unsigned int b);
