@@ -13,7 +13,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *a;
 
-	if (nmeb == 0 || size == 0)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 	a = malloc(nmemb * size)
 
@@ -32,12 +32,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int a = 0;
+	unsigned int o = 0;
 
-	while (a < n)
+	while (o < n)
 	{
-		*(s + a) = b;
-		a += 1;
+		*(s + o) = b;
+		o += 1;
 	}
-	return (a);
+	return (o);
 }
