@@ -2,7 +2,7 @@ include "lists.h"
 
 /**
  * add_nodeint - Adds a new node at the beginning
- * head: A pointer to the address 
+ * @head: A pointer to the address
  * @n: The integer for the new node
  * Return: If the function fails
  */
