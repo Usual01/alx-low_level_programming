@@ -1,4 +1,39 @@
-#include "main.h"
+#include "main.h
+#include <stdlib.h>
+#include <stdio.h>"
+
+
+/**
+ * _pow_recursion - function that returns value of x in power format
+ *@x:base number
+ *@y:raised to the power
+ *Return: raised nuber
+ */
+
+int _pow_recursion(int x, int y)
+{
+	if (y < 0)
+		return (-1);
+	if (y == 0)
+		return (1);
+	return (x * _pow_recursion(x, y - 1));
+}
+
+/**
+ *_strlen - returns a string
+ *@s: pointer
+ *Return: string
+ */
+int _strlen(const char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i += 1;
+	}
+	return (i);
+}
 
 /**
  * binary_to_uint- convert binary to unsigned int
@@ -7,25 +42,19 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int night = 0, j;
-	unsigned int number = 0, non_binary = 0;
+	int len, exp = 0;
+	unsigned int res = 0;
 
 	if (b == NULL)
-		return (non_binary);
-
-	while (b[night] != '\0')
-		night++;
-
-	night -= 1;
-	j = 0;
-	while (b[j])
+		return (0);
+	while (len-- && len >= 0)
 	{
-		if ((b[j] != '0') && (b[j] != '1'))
-			return (non_binary);
-		if (b[j] == '1')
-			number += (1 * (1 << night));
-		j++;
-		night--;
+		if (b[len] == '1')
+			res += _pow_recursion(2, exp);
+		else if (b[len] != '0')
+			return (0);
+	exp++;
 	}
-	return (number);
+	return (res);
 }
+
