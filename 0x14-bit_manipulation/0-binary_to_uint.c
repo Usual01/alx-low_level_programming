@@ -3,30 +3,39 @@
 /**
  * binary_to_uint - converts a binary number
  * @b: binary
- * Return: unsigned int
+ * Return:decimal
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int ui;
-	int len, base_two;
+	int i = 0, j = strlen(b), num;
+	unsigned int sum = 0;
 
-	if (!b)
+	if (b == NULL)
 		return (0);
-
-	ui = 0;
-
-	for (len = 0; b[len] != '\0'; len++)
-		;
-
-	for (len--, base_two = 1; len >= 0; len--, base_two *= 2)
+	while (b[i] != '\0')
 	{
-		if (b[len] != '0' && b[len] != '1')
-		{
-			return (0);																			}
-		if (b[len] & 1)
-		{
-			ui += base_two																			}
+		if (b[i] != '1' && b[i] != '0')
+			return (0);
+		num = b[i] - '0';
+		sum = sum + num * _pow(2, j - i - 1);
+		i++;
 	}
-	return (ui);
+	return (sum);
+}
+/**
+ * _pow - to find the power
+ * @a: base
+ * @b:exponenet
+ * Return:power
+ */
+int _pow(int a, int b)
+{
+	int power = 1, i;
+
+	for (i = 1; i <= b; ++i)
+	{
+		power = power * a;
+	}
+	return (power);
 }
 
