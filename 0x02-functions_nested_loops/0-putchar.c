@@ -19,3 +19,12 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
+/**
+#include "main.h
+
+int proudb(name)
+{
+	return (write(1, &name, 1));
+}
+*/
