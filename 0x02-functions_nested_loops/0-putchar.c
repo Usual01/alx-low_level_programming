@@ -7,15 +7,23 @@
  */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	#include <stdio.h>
+#include "main.h"
+/**
+ * main - Entry point
+ * Description: prints text
+ * Return: always 0
+ */
+int main(void)
+{
+	int i;
+	char str[] = "_putchar";
+
+	for (i = 0; str[i]; i++)
+		_putchar(str[i]);
+	putchar('\n');
+	return (0);
+}
 
 	return (0);
 }
